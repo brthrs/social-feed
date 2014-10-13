@@ -268,7 +268,7 @@ if (typeof Object.create !== 'function') {
                         post.link = (element.link) ? element.link : 'http://facebook.com/' + element.from.id;
                         post.social_network = 'facebook';
                         if (options.show_media === true) {
-                            if (element.picture) {
+                            /*if (element.picture) {
                                 var image_url = element.picture;
                                 if (element.object_id) {
                                     image_url = Feed.facebook.graph + element.object_id + '/picture/?type=normal';
@@ -276,7 +276,7 @@ if (typeof Object.create !== 'function') {
                                     image_url = image_url + "&w=500&h=500"
                                 }
                                 post.attachment = '<img class="attachment" src="' + image_url + '" />';
-                            }
+                            }*/
                         }
                         return post;
                     }
